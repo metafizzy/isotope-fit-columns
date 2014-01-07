@@ -1,0 +1,18 @@
+{
+  "name": "isotope-fit-columns",
+  "main": "fit-columns.js",
+  "version": "0.1.0",
+  "authors": [
+    "David DeSandro"
+  ],
+  "description": "fitColumns layout mode for Isotope",
+  "dependencies": {
+    "isotope": "metafizzy/isotope#2.0.0-beta.6"
+  },
+  "keywords": [
+    "layout",
+    "mode",
+    "isotope",
+    "horizontal"
+  ]
+}
