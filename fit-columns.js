@@ -41,8 +41,8 @@ function fitColumnsDefinition( LayoutMode ) {
     return { width: this.maxX };
   };
 
-  FitColumns.prototype.resize = function() {
-    this.resizeVertical();
+  FitColumns.prototype.needsResizeLayout = function() {
+    return this.needsVerticalResizeLayout();
   };
 
   return FitColumns;
