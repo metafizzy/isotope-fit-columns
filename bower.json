@@ -1,13 +1,13 @@
 {
   "name": "isotope-fit-columns",
   "main": "fit-columns.js",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "authors": [
     "David DeSandro"
   ],
   "description": "fitColumns layout mode for Isotope",
   "dependencies": {
-    "isotope": ">=2.0.0-beta.9 <2.1"
+    "isotope": "2.0.x"
   },
   "keywords": [
     "layout",
