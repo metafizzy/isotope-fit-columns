@@ -1,0 +1,28 @@
+{
+  "name": "isotope-fit-columns",
+  "version": "1.1.0",
+  "description": "fitColumns layout mode for Isotope",
+  "main": "fit-columns.js",
+  "dependencies": {
+    "isotope-layout": "2.1.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metafizzy/isotope-fit-columns.git"
+  },
+  "keywords": [
+    "DOM",
+    "browser",
+    "layout",
+    "isotope",
+    "isotope-layout-mode"
+  ],
+  "author": "David DeSandro / Metafizzy",
+  "bugs": {
+    "url": "https://github.com/metafizzy/isotope-fit-columns/issues"
+  },
+  "homepage": "https://github.com/metafizzy/isotope-fit-columns"
+}

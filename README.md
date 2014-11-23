@@ -11,3 +11,5 @@ $('#container').isotope({
 ## Install
 
 Install with [Bower](http://bower.io) `bower install isotope-fit-columns`
+
+[Install with npm](https://www.npmjs.org/package/isotope-fit-columns): `npm install isotope-fit-columns`
