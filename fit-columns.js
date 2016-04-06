@@ -1,26 +1,45 @@
 /*!
  * fitColumns layout mode for Isotope
- * v1.1.2
+ * v1.1.3
  * http://isotope.metafizzy.co/layout-modes/fitcolumns.html
  */
 
 /*jshint browser: true, devel: false, strict: true, undef: true, unused: true */
 
-( function( window ) {
+( function( window, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /*globals define, module, require */
+  if ( typeof define === 'function' && define.amd ) {
+    // AMD
+    define( [
+        'isotope/js/layout-mode'
+      ],
+      factory );
+  } else if ( typeof exports === 'object' ) {
+    // CommonJS
+    module.exports = factory(
+      require('isotope-layout/js/layout-mode')
+    );
+  } else {
+    // browser global
+    factory(
+      window.Isotope.LayoutMode
+    );
+  }
 
-'use strict';
-
-function fitColumnsDefinition( LayoutMode ) {
+}( window, function factory( LayoutMode ) {
+  'use strict';
 
   var FitColumns = LayoutMode.create('fitColumns');
+  var proto = FitColumns.prototype;
 
-  FitColumns.prototype._resetLayout = function() {
+  proto._resetLayout = function() {
     this.x = 0;
     this.y = 0;
     this.maxX = 0;
   };
 
-  FitColumns.prototype._getItemLayoutPosition = function( item ) {
+  proto._getItemLayoutPosition = function( item ) {
     item.getSize();
 
     // if this element cannot fit in the current row
@@ -40,34 +59,14 @@ function fitColumnsDefinition( LayoutMode ) {
     return position;
   };
 
-  FitColumns.prototype._getContainerSize = function() {
+  proto._getContainerSize = function() {
     return { width: this.maxX };
   };
 
-  FitColumns.prototype.needsResizeLayout = function() {
+  proto.needsResizeLayout = function() {
     return this.needsVerticalResizeLayout();
   };
 
   return FitColumns;
 
-}
-
-if ( typeof define === 'function' && define.amd ) {
-  // AMD
-  define( [
-      'isotope/js/layout-mode'
-    ],
-    fitColumnsDefinition );
-} else if ( typeof exports === 'object' ) {
-  // CommonJS
-  module.exports = fitColumnsDefinition(
-    require('isotope-layout/js/layout-mode')
-  );
-} else {
-  // browser global
-  fitColumnsDefinition(
-    window.Isotope.LayoutMode
-  );
-}
-
-})( window );
+}));

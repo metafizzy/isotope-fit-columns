@@ -3,7 +3,7 @@
 See [docs for fitColumns layout mode](http://isotope.metafizzy.co/layout-modes/fitcolumns.html)
 
 ``` js
-$('#container').isotope({
+$('.grid').isotope({
   layoutMode: 'fitColumns'
 });
 ```
