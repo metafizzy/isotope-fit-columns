@@ -1,6 +1,6 @@
 # fitColumns layout mode for Isotope
 
-See [docs for fitColumns layout mode](http://isotope.metafizzy.co/layout-modes/fitcolumns.html)
+See [docs for fitColumns layout mode](https://isotope.metafizzy.co/layout-modes/fitcolumns.html)
 
 ``` js
 $('.grid').isotope({

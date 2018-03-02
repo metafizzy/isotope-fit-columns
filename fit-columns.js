@@ -1,7 +1,7 @@
 /*!
  * fitColumns layout mode for Isotope
- * v1.1.3
- * http://isotope.metafizzy.co/layout-modes/fitcolumns.html
+ * v1.1.4
+ * https://isotope.metafizzy.co/layout-modes/fitcolumns.html
  */
 
 /*jshint browser: true, devel: false, strict: true, undef: true, unused: true */
@@ -12,7 +12,7 @@
   if ( typeof define === 'function' && define.amd ) {
     // AMD
     define( [
-        'isotope/js/layout-mode'
+        'isotope-layout/js/layout-mode'
       ],
       factory );
   } else if ( typeof exports === 'object' ) {
